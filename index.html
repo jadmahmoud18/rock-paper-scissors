@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JM | Rock Paper Scissors</title>
+    <link rel="stylesheet" href="assests/styles/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap">
+</head>
+<body>
+    <header>
+        <div class="headerArea">
+            <a href="/">Rock Paper Scissors Game</a>
+        </div>
+        <p id="openPopupBtn">Check Important Info</p>
+    </header>
+
+    <main>
+        <div class="playArea">
+            <p>Choose one of these!</p>
+            <div class="playBtnsArea">
+                <button class="playBtns" onclick="playerChooseRock(); computerChoose()">Rock</button>
+                <button class="playBtns" onclick="playerChoosePaper(); computerChoose()">Paper</button>
+                <button class="playBtns" onclick="playerChooseScissors(); computerChoose()">Scissors</button>
+            </div>
+        </div>
+        <div class="resultArea">
+            <h2 id="resultMessage"></h2>
+            <p id="computerChoiceMessage"></p>
+        </div>
+        <div class="resultCounterArea">
+            <p>Wins: <span id="winsCount">0</span></p>
+            <p>Losses: <span id="lossesCount">0</span></p>
+            <p>Ties: <span id="tiesCount">0</span></p>
+        </div>
+        <div class="resetCounter">
+            <button class="resetCounterBtn" id="resetCounterBtn" onclick="location.reload();">Reset</button>
+        </div>
+        <div class="otherMessageArea">
+            <p class="playAgainMessage" id="playAgainMessage"></p>
+        </div>
+    </main>
+
+    <!--Pop Up-->
+
+    <div id="popUpOverlay" class="popUpOverlay"></div>
+    <div id="popUp" class="popUp">
+        <h3>Desgined by <a href="mailto:jadmahmoud999@gmail.com">Jad Mahmoud</a></h3>
+        <p>©2024 All Rights Reserved</p>
+    <button id="closePopupBtn" class="close-btn">Close</button>
+    </div>
+
+    <script src="assests/scripts/scripts.js"></script>
+</body>
+</html>

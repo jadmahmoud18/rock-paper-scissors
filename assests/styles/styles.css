@@ -1,0 +1,171 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background: linear-gradient(to top, #030067, #06002b) no-repeat;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+header {
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid #fefefe;
+    padding: 20px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+main {
+    justify-content: center;
+    align-items: center;
+}
+
+header p {
+    cursor: pointer;
+}
+
+header p:hover {
+    text-decoration: underline;
+}
+
+.playArea p {
+    margin-bottom: 40px;
+}
+
+.playBtnsArea {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+
+.playBtns {
+    height: 60px;
+    width: 120px;
+    border-radius: 5px;
+    box-shadow: none;
+    border: 3px solid #fefefe;
+    background: none;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.17s ease;
+}
+
+.playBtns:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.playBtns:active {
+    background-color: orange;
+}
+
+.resultCounterArea {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+}
+
+.resetCounter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.resetCounterBtn {
+    height: 40px;
+    width: 80px;
+    border-radius: 5px;
+    box-shadow: none;
+    border: 3px solid #fefefe;
+    background: none;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.17s ease;
+}
+
+.resetCounterBtn:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.popUp {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    border-radius: 5px;
+}
+
+.popUp.active {
+    display: block;
+}
+
+.popUp .close-btn {
+    cursor: pointer;
+    color: #fff;
+    background: #333;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.popUp p, h3, a {
+    color: #333;
+    text-decoration: none;
+}
+
+.popUp a {
+    text-decoration: underline;
+}
+
+.popUpOverlay {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.popUpOverlay.active {
+    display: block;
+}
+
+
+@media (max-width: 425px) {
+    body {
+        height: auto;
+    }
+
+    .playBtnsArea {
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .playAgainMessage {
+        font-size: 0.9em;
+    }
+}
