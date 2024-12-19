@@ -61,13 +61,13 @@ function playerChoosePaper() {
     }
     else if (playerChoice !== computerChoice && computerChoice === 'Scissors') {
         result = 'Lose'
-        winsCount += 1
+        lossesCount += 1
         document.getElementById('resultMessage').innerHTML = 'You Lose!'
         document.getElementById('computerChoiceMessage').innerHTML = 'Computer Chose: Scissors'
     }
     else {
         result = 'Win'
-        lossesCount += 1
+        winsCount += 1
         document.getElementById('resultMessage').innerHTML = 'You Win!'
         document.getElementById('computerChoiceMessage').innerHTML = 'Computer Chose: Rock'
     }
@@ -89,13 +89,13 @@ function playerChooseScissors() {
     }
     else if (playerChoice !== computerChoice && computerChoice === 'Rock') {
         result = 'Lose'
-        winsCount += 1
+        lossesCount += 1
         document.getElementById('resultMessage').innerHTML = 'You Lose!'
         document.getElementById('computerChoiceMessage').innerHTML = 'Computer Chose: Rock'
     }
     else {
         result = 'Win'
-        lossesCount += 1
+        winsCount += 1
         document.getElementById('resultMessage').innerHTML = 'You Win!'
         document.getElementById('computerChoiceMessage').innerHTML = 'Computer Chose: Paper'
     }
