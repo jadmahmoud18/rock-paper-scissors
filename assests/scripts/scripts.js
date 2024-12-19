@@ -84,7 +84,7 @@ function playerChooseScissors() {
     if (playerChoice === computerChoice) {
         result = 'Tie'
         tiesCount += 1
-        document.getElementById('resultMessage').innerHTML = 'Tie'
+        document.getElementById('resultMessage').innerHTML = 'Tie!'
         document.getElementById('computerChoiceMessage').innerHTML = 'Computer Chose: Scissors'
     }
     else if (playerChoice !== computerChoice && computerChoice === 'Rock') {
